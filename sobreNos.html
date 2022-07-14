@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Macrâ Rust - Sobre Nós</title>
+</head>
+
+<body>
+
+  <!--  Modal   -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="form-group">
+              <label for="loginSenha">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+            <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fecha Modal  -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+      <img id="logo" src="logo.png" alt="Logo">
+    </a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Serviços
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item drop" href="marcenaria.html">Marcenaria</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Macramê</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="sobreNos.html">Sobre Nós</a>
+        </li>
+        <li class="nav-item hover">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#modalLogin" href="#">Login</a>
+        </li>
+        <li>
+          <form class="d-flex">
+            <button class="btn btn-outline-dark" type="submit">
+              <i class="bi-cart-fill me-1"><img src="carinho.ico" alt="Carrinho" id="carrinho"></i>
+              Carrinho
+              <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="quemSomos py-4">
+
+
+    <div class="container animate__backInDown">
+      <img id="logoGrande" src="logoGrande-min.jpg" class="container-fluid" alt="Macrâ Rust">
+    </div>
+
+    <h2 class="display-4 text-center mt-5 text-primary">Quem Somos?</h2>
+
+    <div class="row mx-auto my-5" id="quemSomos">
+      <div class="col-0md-5 col bg-lig0ht rounded">
+        <p class="h1 mb-3">
+          Marcenaria e Macramê.
+        </p>
+        <p class="lead">- Fundada em 2020, situada na cidade de Joinville - SC,
+          <br>
+          a <b>Macrâ Rust</b> vem trazendo oque há de mais novo e moderno unindo o que há de melhor em marcenaria e na
+          fabricação de macramês com fios de alta qualidade.
+          <br>
+          Trazendo para seus clientes materias de qualide junto á mão de obra especializada,
+          e assim criando peças unicas e com exclusividade, deixando sua casa mais elegante.
+        </p>
+        <p class="lead mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae expedita odio harum
+          molestias necessitatibus! Velit amet blanditiis nostrum alias quae aut itaque facere. Illo possimus ipsa
+          repellat. Odit, voluptates dolor!
+        </p>
+        <p class="lead mt-4">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, autem natus atque explicabo labore ad maiores
+          nemo quia! Ab culpa doloremque consequatur non. Iusto, impedit. Velit, esse vitae! Architecto, quidem?
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolore nemo maiores ex laborum, quas laudantium
+          odio dolores a quaerat harum ipsam totam, neque similique. Voluptatibus aut consectetur earum ullam.
+        </p>
+      </div>
+      <div class="col-md-7 col ">
+        <img src="marcenaria.jpeg" alt="Marcenaria">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class=" quemSomos col py-5">
+    <div class="row mx-auto">
+      <div class="col-md-6  col trabalho" id="img-trabalho">
+        <img src="trabalho.png" alt="">
+      </div>
+      <div class="col-md-3 bg-light trabalho" id="diferenciais">
+        <h2 class="display-4">Nossos principais diferenciais são:</h2>
+        <div class="dropdown-divider"></div>
+        <ul class="diferenciais mt-4">
+          <li>Fabricação Própria</li>
+          <li>Negociação direta</li>
+          <li>Entrega Rápida</li>
+          <li>Qualidade</li>
+          <li>Preço Justo</li>
+        </ul>
+      </div>
+      <div class="col-md-3 col trabalho bg-light" id="atendimento">
+        <h2 class="display-4">Atendimento Personalizado</h2>
+        <div class="dropdown-divider"></div>
+        <p class="pt-3 at-personalizado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eum at error, sit
+          ullam aliquam
+          voluptatum iusto distinctio quia similique harum animi?</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a data-toggle="modal" data-target="#modalLogin" href="#">Login</a></li>
+            <li><a href="sobreNos.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">SERVIÇOS</h4>
+          <ul class="list-unstyled">
+            <li><a href="marcenaria.html">Marcenaria</a></li>
+            <li><a href="macrame.html">Macramê</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-6">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>macra.rust@gmail.com</li>
+            <li>(47) 98486-2842</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-6">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" target="_blank"
+                href="https://www.facebook.com/macra.rust/?ref=page_internal" style="max-width: 140px">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" target="_blank"
+                href="https://www.instagram.com/macra.rust/" style="max-width: 140px">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="lead mb-0">Macra Rust © 2020. Alguns direitos reservados. - Desenvolvido por Murilo Albrecht</p>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="popper.min.js"></script>
+  <script type="text/javascript" src="bootstrap.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

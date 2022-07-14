@@ -1,0 +1,132 @@
+
+.navbar {
+    background: #8C8C8D;
+}
+
+#logo {
+    border-radius: 50%;
+}
+
+.carousel-inner > .carousel-item > img {
+    height: 550px;
+}
+
+.modal-login {
+    border-radius: 20px 0px;
+}
+
+.form-group > #loginEmail,#loginSenha{
+    border-radius: 20px;
+}
+
+#watsCarousel {
+    margin-bottom: 25px;
+}
+
+.redesSocias img {
+    width: 80px;
+}
+
+#logoGrande {
+    height: 400px;
+}
+
+.animate__backInDown {
+    
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+.quemSomos > #quemSomos {
+    height: 600px;
+}
+
+.trabalho {
+    height: 400px;
+}
+
+#carrinho {
+    width: 30px;
+}
+
+#img-trabalho > img {
+    width: 100%;
+}
+
+#diferenciais {
+    border-right: 1px solid black;
+}
+
+.diferenciais {
+    font-size: 1.5rem;
+}
+
+.at-personalizado {
+    font-size: 1.5rem;
+}
+
+
+#mobile {
+    display: none;
+}
+
+.ver-detalhes {
+    width: 200px;
+    margin-bottom: 1rem;
+}
+
+.add-carrinho {
+    width: 200px;
+}
+
+@media (max-width: 1000px) {
+
+    .ver-detalhes {
+        width: 10rem;
+    
+    }
+}
+
+@media (max-width: 767px) {
+
+    .desktop{
+       display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #diferenciais {
+        border: none;
+    }
+
+    #atendimento {
+        margin-top: 30px;
+    }
+
+    #dadosDeContato {
+        text-align: center;
+    }
+
+    #list-redesSociais {
+        margin: 0 auto;
+    }
+
+    .ver-detalhes {
+        width: 8rem;
+    
+    
+    }
+
+    .add-carrinho  {
+        width: 8rem;
+
+    }
+
+    
+    
+
+    
+}

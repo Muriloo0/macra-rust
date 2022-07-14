@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles.shop.css">
+  <title> Macrâ Rust > Shop > Marcenaria</title>
+</head>
+
+<body>
+
+  <!--  Modal   -->
+  <div class="row">
+    <div class=" col modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" class="form-control" id="loginEmail">
+              </div>
+              <div class="form-group">
+                <label for="loginSenha">Senha</label>
+                <input type="password" class="form-control" id="loginSenha">
+              </div>
+              <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+              <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui</a>.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fecha Modal  -->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">
+      <img id="logo" src="logo.png" alt="Logo">
+    </a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Serviços
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item drop" href="marcenaria.html">Marcenaria</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Macramê</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobreNos.html">Sobre Nós</a>
+        </li>
+        <li class="nav-item hover">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#modalLogin" href="#">Login</a>
+        </li>
+        <li>
+          <form class="d-flex">
+            <button class="btn btn-outline-dark" type="submit">
+              <a href="carrinho.html">
+                <i class="bi-cart-fill me-1"><img src="carinho.ico" alt="Carrinho" id="carrinho"></i>
+              </a>
+              Carrinho
+              <span class="badge bg-dark text-white ms-1 rounded-pill carrinhoIcon" id="carrinhoIndex">0</span>
+            </button>
+          </form>
+        </li>
+        </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Header-->
+  <header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+      <div class="text-center text-white">
+        <h1 class="display-4 fw-bolder">Loja da Madeira</h1>
+        <p class="lead fw-normal text-white-50 mb-0">Página destinada a venda de produtos feitos de madeira.</p>
+      </div>
+    </div>
+  </header>
+  <!-- Section-->
+  <section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img class="card-img-top" src="comedouroPetIndividual.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center ">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Comedouro Pet Individual</h5>
+                <!-- Product price-->
+                R$50,00
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto ver-detalhes" href="#"> Ver Detalhes</a>
+              </div>
+              <div class=" text-center"><button class=" btn btn-outline-dark mt-auto add-carrinho" type="button"
+                  onclick="acrescentar()"> Adicionar ao Carrinho</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- Sale badge-->
+            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+            <!-- Product image-->
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Comedouro Pet Duplo</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted text-decoration-line-through">R$20.00</span>
+                R$18.00
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto ver-detalhes" href="#"> Ver Detalhes</a>
+              </div>
+              <div class="text-center"><button type="button" onclick="acrescentar()"
+                  class="btn btn-outline-dark mt-auto add-carrinho">Adicionar ao
+                  Carrinho</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img class="card-img-top" src="abridorDeGarrafasMagenetico.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Abridor de Garrafas de Parede Magnético</h5>
+                <!-- Product price-->
+                <span class="text-muted text-decoration-line-through">R$50.00</span>
+                R$25.00
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto ver-detalhes" href="#"> Ver Detalhes</a>
+              </div>
+              <div class="text-center"><button type="button" onclick="acrescentar()"
+                  class="btn btn-outline-dark mt-auto add-carrinho">Adicionar ao
+                  Carrinho</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img class="card-img-top" src="pingometroArtesanalDeMadeira.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Pingometro Artesanal de Madeira</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                R$50,00
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto ver-detalhes" href="#"> Ver Detalhes</a>
+              </div>
+              <div class="text-center"><button type="button" onclick="acrescentar()"
+                  class="btn btn-outline-dark mt-auto add-carrinho">Adicionar ao
+                  Carrinho</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- Sale badge-->
+            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+            <!-- Product image-->
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Placa Gravada á Laser</h5>
+                <!-- Product price-->
+                R$50,00
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto ver-detalhes" href="#"> Ver Detalhes</a>
+              </div>
+              <div class="text-center"><button class="btn btn-outline-dark mt-auto add-carrinho"
+                  onclick="acrescentar()">Adicionar ao
+                  Carrinho</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Dispenser de Bebidas</h5>
+                <!-- Product price-->
+                R$120.00
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto ver-detalhes" href="#"> Ver Detalhes</a>
+              </div>
+              <div class="text-center"><button class="btn btn-outline-dark mt-auto add-carrinho"
+                  onclick="acrescentar()">Adicionar ao
+                  Carrinho</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- Sale badge-->
+            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+            <!-- Product image-->
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Mão Francesa Cedrinho</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted text-decoration-line-through">R$20.00</span>
+                R$18.00
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto ver-detalhes" href="#"> Ver Detalhes</a>
+              </div>
+              <div class="text-center"><button type="button" class="btn btn-outline-dark mt-auto add-carrinho"
+                  onclick="acrescentar()">Adicionar ao
+                  Carrinho</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Mão Francesa Pinus</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                  <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                R$40.00
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto ver-detalhes" href="#"> Ver Detalhes</a>
+              </div>
+              <div class="text-center"><button type="button" class="btn btn-outline-dark mt-auto add-carrinho"
+                  onclick="acrescentar()">Adicionar ao
+                  Carrinho</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li><a data-toggle="modal" data-target="#modalLogin" href="#">Login</a></li>
+            <li><a href="sobreNos.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">SERVIÇOS</h4>
+          <ul class="list-unstyled">
+            <li><a href="marcenaria.html">Marcenaria</a></li>
+            <li><a href="macrame.html">Macramê</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-6">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>macra.rust@gmail.com</li>
+            <li>47 98486-2842</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-6">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" target="_blank"
+                href="https://www.facebook.com/macra.rust/?ref=page_internal" style="max-width: 140px">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" target="_blank"
+                href="https://www.instagram.com/macra.rust/" style="max-width: 140px">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="lead mb-0">Macra Rust © 2020. Alguns direitos reservados. - Desenvolvido por Murilo Albrecht</p>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="popper.min.js"></script>
+  <script type="text/javascript" src="bootstrap.js"></script>
+  <script type="text/javascript" src="jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="scripts.shop.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+
+
+</body>
+
+</html>
